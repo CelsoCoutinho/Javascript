@@ -1,0 +1,62 @@
+body{
+    font: normal 15pt arial;
+    background-color: rgba(0, 0, 0, 0.826);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    background-color: white;
+    padding: 15px; 
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.434);
+}
+div{
+    text-align: center;
+    padding: 6px;
+}
+button{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 3px 5px rgb(0, 45, 48);
+}
+button#verme{
+    border-radius: 100px;
+    background-color: rgb(178, 23, 37);
+}
+button#Azul{
+    border-radius: 100px;
+    background-color: rgb(20, 44, 75);
+}
+button#verde{
+    border-radius: 100px;
+    background-color: rgb(179, 199, 179);
+}
+button#preto{
+    border-radius: 100px;
+    background-color: rgb(30, 29, 34);
+}
+button#roxo{
+    border-radius: 100px;
+    background-color: rgb(141, 131, 182);
+}
+strong{
+    opacity: 0;
+}
+#imagem{
+    width: 250px;
+    height: 250px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    font-size: 12pt;
+    color: white;
+}

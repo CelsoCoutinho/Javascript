@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Tabuada</h1>
+    </header>
+    <section>
+        <p>
+            Gerar Tabuada: <input type="number" name="txtta" id="txtta" placeholder="digite um número">
+            <input id="inp" onclick="gerar()" type="button" value="Gerar">
+        </p>
+        <p>    
+        <div id="res"> Resultado: <br></div>
+        </p>
+    </section>
+    <script>
+        function gerar(){
+            var ta = document.getElementById('txtta')
+            var ress = document.getElementById('res')
+            var n1 = Number(ta.value)
+            var c = 1
+            var tab = 0
+            while (c <= 12) {
+                tab = n1 * c
+                ress.innerHTML += ` ${n1} x ${ c} = ${ tab} <br>`
+                c++
+            }
+        }
+    </script>
+    <footer>
+        <p>Por Celso Coutinho</p>
+    </footer>
+</body>
+
+</html>

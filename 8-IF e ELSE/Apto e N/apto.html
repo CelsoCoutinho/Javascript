@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border-radius: 10%;
+        }
+
+        div {
+            margin: 10px 10px 10px 0px;
+            border: solid;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 10%;
+        }
+
+        div#valor {
+            margin: 10px 10px 10px 0px;
+            border: solid;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+        button {
+            display: flex;
+            margin-top: 10px;
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculo de média</h1>
+    <input type="number" name="txtn1" id="textn1"> +
+    <input type="number" name="txtn2" id="textn2">
+    <button onclick="media()">Ver Resultado</button>
+    <div id="valor">valor</div>
+    <div id="resul">Resultado</div>
+    <script>
+        function media() {
+            var tn1 = window.document.getElementById('textn1')
+            var tn2 = window.document.getElementById('textn2')
+            var re = window.document.getElementById('resul')
+            var va = window.document.getElementById('valor')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var med = (n1 * 0.4) + (n2 * 0.6)
+            va.innerHTML = `${med.toFixed(1)} valores`
+
+            if (med >= 10) {
+                re.innerText = `Apto`
+                re.style.border = 'solid green'
+            } else {
+                re.innerText = `N/Apto`
+                re.style.border = 'solid red'
+            }
+        }
+    </script>
+</body>
+
+</html>

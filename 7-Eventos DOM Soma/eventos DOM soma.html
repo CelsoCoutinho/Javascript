@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Eventos DOM-->
+
+<body>
+    <!--Soma-->
+    <h1>SOMA</h1>
+    <input type="number" name="textn1" id="textn1"> +
+    <input type="number" name="textn2" id="textn2">
+    <button onclick="somar()">soma</button>
+    <div id="res">resultado da Soma</div>
+
+    <!--subtração-->
+    <h1>SUBTRAÇÃO</h1>
+    <input type="number" name="textn1" id="txtn1"> -
+    <input type="number" name="textn2" id="txtn2">
+    <button onclick="sube()">sub</button>
+    <div id="resub">resultado subtração</div>
+
+    <!--Multiplicação-->
+    <h1>Multiplicação</h1>
+    <input type="number" name="textn1" id="ttxtn1"> -
+    <input type="number" name="textn2" id="ttxtn2">
+    <button onclick="multi()">Multi</button>
+    <div id="remul">resultado da Multiplicação</div>
+
+    <!--Divisão-->
+    <h1>Divisão</h1>
+    <input type="number" name="textn1" id="tdxtn1"> -
+    <input type="number" name="textn2" id="tdxtn2">
+    <button onclick="divi()">Multi</button>
+    <div id="rediv">resultado da Divisão</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('textn1')
+            var tn2 = window.document.getElementById('textn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = s
+        }
+        function sube() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var ress = window.document.getElementById('resub')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var sub = n1 - n2
+            ress.innerHTML = sub
+        }
+        function multi() {
+            var tn1 = window.document.getElementById('ttxtn1')
+            var tn2 = window.document.getElementById('ttxtn2')
+            var rem = window.document.getElementById('remul')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var mul = n1 * n2
+            rem.innerHTML = mul
+        }
+        function divi() {
+            var tn1 = window.document.getElementById('tdxtn1')
+            var tn2 = window.document.getElementById('tdxtn2')
+            var redi = window.document.getElementById('rediv')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var di = n1 / n2
+            redi.innerHTML = di
+        }
+    </script>
+
+</body>
+
+</html>

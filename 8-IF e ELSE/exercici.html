@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    A sua velocidade: <input type="number" name="txtvel" id="txtvel">
+    <button onclick="velocidade()">calcular</button>
+    <div id="resul">resultado</div>
+    <script>
+        function velocidade() {
+            var vell = window.document.getElementById('txtvel')
+            var resul = window.document.getElementById('resul')
+            var velo = Number(vell.value)
+            resul.innerHTML = `A sua velocidade é de ${velo}Km/h `
+            if (velo > 50) {
+                resul.innerHTML += `<strong>Multado</strong>`
+            }
+        }
+    </script>
+</body>
+
+</html>
